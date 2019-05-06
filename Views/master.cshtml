@@ -31,7 +31,7 @@
 			<footer id="footer">
 				<div class="inner">
 					<ul class="copyright">
-						<li>&copy; @Model.Value("footerText")</li>
+						<li>@Model.Value("footerText", fallback: Fallback.ToAncestors)</li>
 					</ul>
 				</div>
 			</footer>
