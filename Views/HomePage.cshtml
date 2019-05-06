@@ -1,0 +1,12 @@
+﻿@inherits Umbraco.Web.Mvc.UmbracoViewPage<ContentModels.HomePage>
+@using ContentModels = Umbraco.Web.PublishedModels;
+@{
+	Layout = "master.cshtml";
+}
+
+<!-- Banner -->
+	<section id="banner">
+		<h2>@Model.Value("pageTitle")</h2>
+		<img src='@Model.Value("FileUploader")'/>
+		<p>@Model.Value("bodyText")</p>
+	</section>
